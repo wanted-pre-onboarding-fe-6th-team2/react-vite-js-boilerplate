@@ -32,6 +32,11 @@
     "no-throw-literal": "off",
     "no-nested-ternary": "off",
     "react/no-array-index-key": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/no-extraneous-dependencies": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
   }
 }
