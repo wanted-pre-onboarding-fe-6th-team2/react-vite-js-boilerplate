@@ -1,6 +1,6 @@
 {
-  "extends": ["react-app", "plugin:prettier/recommended"],
-  "plugins": ["prettier", "prefer-arrow"],
+  "extends": ["airbnb", "airbnb/hooks", "plugin:import/recommended", "prettier"],
+  "plugins": ["import", "react-hooks", "prettier", "prefer-arrow"],
   "rules": {
     "prefer-arrow/prefer-arrow-functions": [
       "error",
@@ -10,19 +10,28 @@
         "classPropertiesAllowed": true
       }
     ],
-    "func-style": ["error", "expression"],
     "prettier/prettier": "error",
-    "prefer-arrow-callback": ["error", { "allowNamedFunctions": true }],
-    "no-unused-vars": "error",
-    "no-var": "error",
-    "no-console": "warn",
-    "prefer-const": [
-      "error",
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".svg", "png"] }],
+    "react/function-component-definition": [
+      2,
       {
-        "destructuring": "any",
-        "ignoreReadBeforeAssign": false
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
       }
     ],
-    "react/jsx-no-useless-fragment": "error"
+    "react/jsx-props-no-spreading": "off",
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-cycle": "off",
+    "react/require-default-props": "off",
+    "no-throw-literal": "off",
+    "no-nested-ternary": "off",
+    "react/no-array-index-key": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
